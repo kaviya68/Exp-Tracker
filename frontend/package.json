@@ -1,0 +1,9 @@
+{
+  "name": "expense-tracker-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "client": "npm --prefix ./expense-traker run dev",
+    "install-client": "npm --prefix ./expense-traker install"
+  }
+}
