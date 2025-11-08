@@ -30,6 +30,10 @@ app.use("/api/v1/dashboard", dashboardRoutes);
 
 //Server uploads folder
 app.use("/uploads",express.static(path.join(__dirname, "uploads")));
+app.get("/", (req, res) => {
+  res.send("✅ Expense Tracker Backend is running successfully!");
+});
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
